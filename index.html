@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Junhyun Chae | Digital Asset Infrastructure Engineer</title>
   <meta name="description" content="Junhyun Chae is a software engineer in Tokyo building institutional digital asset infrastructure (custody, HSM-based key management, token operations), with a research background in cross-country systemic risk.">
+  <meta name="theme-color" content="#0b1426">
   <meta property="og:title" content="Junhyun Chae | Digital Asset Infrastructure Engineer">
   <meta property="og:description" content="Software engineer in Tokyo building custody infrastructure for financial institutions. First-author JRFM paper on systemic risk.">
   <meta property="og:type" content="profile">
@@ -12,7 +13,10 @@
   <link rel="alternate" hreflang="en" href="https://junhyun-chae.github.io/">
   <link rel="alternate" hreflang="ja" href="https://junhyun-chae.github.io/ja/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,226 +57,263 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Software Engineer · Tokyo</p>
-          <h1>Junhyun Chae</h1>
+      <div class="container bento">
+        <div class="tile hero-main span-8 accent">
+          <p class="label">Software Engineer · Tokyo</p>
+          <h1>Junhyun <em>Chae</em></h1>
           <p class="alt-names"><span lang="ja">チェ・ジュンヒョン</span> · <span lang="ko">채준현</span></p>
           <p class="lead">I build <strong>custody infrastructure for digital assets</strong>: HSM-based key management and token operations for financial institutions. Before that, I researched how financial shocks spread between countries.</p>
           <div class="cta">
-            <a class="btn primary" href="mailto:smiledanny@gmail.com">Email me</a>
+            <a class="btn gold" href="mailto:smiledanny@gmail.com">Email me</a>
             <a class="btn" href="https://www.linkedin.com/in/junhyun-chae-654414443/" rel="me">LinkedIn</a>
             <a class="btn" href="https://github.com/Junhyun-Chae" rel="me">GitHub</a>
             <a class="btn" href="https://orcid.org/0009-0007-5531-7071" rel="me">ORCID</a>
           </div>
         </div>
-        <div class="portrait">
-          <img src="assets/img/portrait.jpg" width="370" height="462" alt="Portrait of Junhyun Chae in a dark suit" fetchpriority="high">
-          <div class="tag"><b>Young Author Award</b>AROB 2025 · 1 of 6 among 443</div>
-        </div>
+        <figure class="tile photo span-4 hero-portrait">
+          <img src="assets/img/portrait.jpg" width="840" height="1116" alt="Junhyun Chae in a dark suit, taking a mirror photo" fetchpriority="high">
+        </figure>
       </div>
-      <div class="container">
-        <div class="stats">
-          <div class="stat"><span class="num">1st author</span><span class="label">Journal of Risk and Financial Management, 2026</span></div>
-          <div class="stat"><span class="num">6 / 443</span><span class="label">Young Author Award winners among AROB 2025 participants</span></div>
-          <div class="stat"><span class="num">4</span><span class="label">conference talks in 2025–2026</span></div>
-          <div class="stat"><span class="num">3</span><span class="label">working languages: Korean, Japanese, English</span></div>
-        </div>
+      <div class="container bento stats" style="margin-top:16px">
+        <div class="tile stat span-3"><span class="num">1st</span><span class="txt">author, <i>Journal of Risk and Financial Management</i> (2026)</span></div>
+        <div class="tile stat span-3"><span class="num">6 / 443</span><span class="txt">Young Author Award winners at AROB 2025</span></div>
+        <div class="tile stat span-3"><span class="num">4</span><span class="txt">conference talks, 2025–2026</span></div>
+        <div class="tile stat span-3"><span class="num">3</span><span class="txt">working languages: Korean, Japanese, English</span></div>
       </div>
     </section>
 
     <section class="section" id="work">
       <div class="container">
-        <div class="section-head">
-          <p class="kicker">NOW</p>
-          <h2>Building custody infrastructure for financial institutions</h2>
-          <p>On the digital asset team at InterTrade (TSE: 3747) in Tokyo.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3m-4 4 3 3m-5-1 2 2"/></svg></div>
+        <div class="section-title"><h2>What I build</h2><span class="rule"></span></div>
+        <p class="section-sub">On the digital asset team at InterTrade (TSE: 3747), Tokyo.</p>
+        <div class="bento">
+          <article class="tile feature span-7 accent">
+            <span class="idx">01</span>
             <h3>HSM signing adapter</h3>
             <p>Designed and built from scratch: a PKCS#11 adapter that connects an institutional MPC custody platform to hardware security modules. Now in use.</p>
+            <ul class="tags"><li>PKCS#11</li><li>HSM</li><li>MPC custody</li></ul>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="8.5" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v2.5h11V10M12 12.5V14"/></svg></div>
+          <article class="tile span-5">
+            <span class="idx">02</span>
             <h3>Token operations, automated</h3>
             <p>Issuance and redemption workflows on a public blockchain, automated end to end with AWS.</p>
+            <ul class="tags"><li>AWS</li><li>Tokenization</li><li>Automation</li></ul>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+          <article class="tile span-5">
+            <span class="idx">03</span>
             <h3>The vendor-facing engineer</h3>
             <p>Technical point of contact for overseas custody vendors, in English. I also evaluate providers, support NDA and contract reviews, and connect them with financial institutions.</p>
           </article>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-head">
-            <h3>InterTrade Co., Ltd.</h3>
-            <span class="muted">Tokyo · Apr 2026 – present</span>
-          </div>
-          <details class="role" open>
-            <summary>Software Engineer, Digital Asset Custody &amp; HSM Integration <span class="pill">Current</span><span class="when">Recruited internally</span></summary>
-            <ul>
-              <li>Designed and built, from scratch, a PKCS#11 signing adapter connecting an institutional MPC custody platform to hardware security modules (HSMs); now in use.</li>
-              <li>Automated token issuance and redemption workflows on a public blockchain using AWS.</li>
-              <li>Technical point of contact for an institutional custody platform vendor, resolving integration issues directly in English.</li>
-              <li>Evaluated institutional custody providers, supported NDA and contract reviews, and connected custody providers with financial institutions.</li>
-              <li>Built internal automation tools in Python and Excel, including a cost reconciliation tool adopted by non-engineering colleagues.</li>
-            </ul>
-          </details>
-          <details class="role">
-            <summary>Software Engineer, FX Trading Systems <span class="when">First assignment</span></summary>
-            <ul>
-              <li>Developed and maintained programs for an FX trading system, including resilience tests that keep customer trading running during database outages.</li>
-              <li>Refactored a market-rate retrieval tool in Python and built a packaged rate-retrieval application for a client.</li>
-            </ul>
-          </details>
+          <article class="tile span-7">
+            <div class="org">
+              <h3>InterTrade Co., Ltd.</h3>
+              <span class="muted">Tokyo · Apr 2026 – present</span>
+            </div>
+            <details class="role" open>
+              <summary>Software Engineer, Digital Asset Custody &amp; HSM Integration <span class="pill">Current</span></summary>
+              <ul>
+                <li>Recruited internally to the digital asset team.</li>
+                <li>Designed and built, from scratch, a PKCS#11 signing adapter connecting an institutional MPC custody platform to HSMs; now in use.</li>
+                <li>Automated token issuance and redemption workflows on a public blockchain using AWS.</li>
+                <li>Technical point of contact for an institutional custody platform vendor, resolving integration issues directly in English.</li>
+                <li>Evaluated custody providers, supported NDA and contract reviews, and connected providers with financial institutions.</li>
+                <li>Built internal automation tools in Python and Excel, including a cost reconciliation tool adopted by non-engineering colleagues.</li>
+              </ul>
+            </details>
+            <details class="role">
+              <summary>Software Engineer, FX Trading Systems <span class="muted">First assignment</span></summary>
+              <ul>
+                <li>Developed and maintained programs for an FX trading system, including resilience tests that keep customer trading running during database outages.</li>
+                <li>Refactored a market-rate retrieval tool in Python and built a packaged rate-retrieval application for a client.</li>
+              </ul>
+            </details>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="research">
       <div class="container">
-        <div class="section-head">
-          <p class="kicker">RESEARCH</p>
-          <h2>How financial shocks travel between countries</h2>
-          <p>Master's research at the University of Hyogo, supervised by Prof. Hiroyasu Inoue.</p>
-        </div>
-
-        <div class="research-grid">
-          <figure class="photo-card">
+        <div class="section-title"><h2>How shocks travel between countries</h2><span class="rule"></span></div>
+        <p class="section-sub">Master's research at the University of Hyogo with Prof. Hiroyasu Inoue.</p>
+        <div class="bento">
+          <figure class="tile photo span-7">
             <img src="assets/img/talk.jpg" width="1182" height="665" loading="lazy" alt="Junhyun Chae presenting results of the multilayer systemic risk model">
           </figure>
-          <article class="card paper">
-            <div class="badge-row">
-              <span class="badge">Journal article</span>
-              <span class="badge">First author</span>
-              <span class="badge">Open access</span>
-            </div>
+          <article class="tile paper span-5 accent">
+            <div class="badges"><span class="badge">Journal article</span><span class="badge">First author</span><span class="badge">Open access</span></div>
             <h3>Multilayer Propagation of Cross-Country Systemic Risk</h3>
             <p class="authors">Junhyun Chae, Hiroyasu Inoue · <i>Journal of Risk and Financial Management</i> 19(3), 197 · March 2026</p>
             <p>A model that couples cross-border bank lending with international trade for 20 economies, 2000–2023. Looking at both layers changes which countries appear systemically important.</p>
             <div class="actions">
-              <a class="btn primary" href="https://doi.org/10.3390/jrfm19030197">Read the paper</a>
+              <a class="btn gold" href="https://doi.org/10.3390/jrfm19030197">Read the paper</a>
               <a class="btn" href="https://github.com/Junhyun-Chae/multilayer-debtrank-financial-contagion">Code</a>
             </div>
           </article>
-        </div>
 
-        <div class="card model">
-          <svg viewBox="0 0 640 330" role="img" aria-label="Two coupled network layers. A shock spreads within each layer and crosses between layers.">
-            <polygon class="fig-plane" points="110,34 620,34 530,134 20,134"/>
-            <polygon class="fig-plane" points="110,194 620,194 530,294 20,294"/>
-            <text class="fig-label" x="24" y="22">Financial layer</text>
-            <text class="fig-label" x="24" y="322">Trade layer</text>
-            <line class="fig-link" x1="150" y1="74" x2="150" y2="234"/>
-            <line class="fig-link" x1="270" y1="104" x2="270" y2="264"/>
-            <line class="fig-link" x1="360" y1="60" x2="360" y2="220"/>
-            <line class="fig-link" x1="460" y1="100" x2="460" y2="260"/>
-            <line class="fig-link" x1="540" y1="64" x2="540" y2="224"/>
-            <line class="fig-edge" x1="150" y1="74" x2="270" y2="104"/>
-            <line class="fig-edge" x1="270" y1="104" x2="360" y2="60"/>
-            <line class="fig-edge" x1="360" y1="60" x2="460" y2="100"/>
-            <line class="fig-edge" x1="460" y1="100" x2="540" y2="64"/>
-            <line class="fig-edge" x1="150" y1="74" x2="360" y2="60"/>
-            <line class="fig-edge" x1="270" y1="104" x2="460" y2="100"/>
-            <line class="fig-edge" x1="150" y1="234" x2="270" y2="264"/>
-            <line class="fig-edge" x1="270" y1="264" x2="460" y2="260"/>
-            <line class="fig-edge" x1="360" y1="220" x2="540" y2="224"/>
-            <line class="fig-edge" x1="150" y1="234" x2="360" y2="220"/>
-            <line class="fig-edge" x1="460" y1="260" x2="540" y2="224"/>
-            <circle class="fig-ring" cx="360" cy="60" r="26"/>
-            <circle class="fig-ring" cx="360" cy="60" r="17"/>
-            <circle class="fig-node" cx="150" cy="74" r="9"/>
-            <circle class="fig-node" cx="270" cy="104" r="9"/>
-            <circle class="fig-node fig-shock" cx="360" cy="60" r="9"/>
-            <circle class="fig-node" cx="460" cy="100" r="9"/>
-            <circle class="fig-node" cx="540" cy="64" r="9"/>
-            <circle class="fig-node" cx="150" cy="234" r="9"/>
-            <circle class="fig-node" cx="270" cy="264" r="9"/>
-            <circle class="fig-node" cx="360" cy="220" r="9"/>
-            <circle class="fig-node" cx="460" cy="260" r="9"/>
-            <circle class="fig-node" cx="540" cy="224" r="9"/>
-          </svg>
-          <div>
-            <h3>How the model works</h3>
-            <ol>
-              <li>Two layers for 20 economies: bank lending (BIS) and trade (UN Comtrade).</li>
-              <li>A shock spreads within a layer by DebtRank.</li>
-              <li>Once distress passes a threshold, it jumps to the other layer.</li>
-              <li>Counting both layers reshuffles which countries look risky.</li>
-            </ol>
+          <div class="tile span-12 model">
+            <div>
+              <svg class="net" viewBox="0 0 720 400" role="img" aria-label="Animation: a shock starts in the financial layer, spreads to neighboring countries, and crosses into the trade layer once distress passes a threshold.">
+                <polygon class="plane" points="150,48 700,48 570,172 20,172"/>
+                <polygon class="plane" points="150,238 700,238 570,362 20,362"/>
+                <text class="layer-label" x="24" y="30">FINANCIAL LAYER</text>
+                <text class="layer-label" x="24" y="392">TRADE LAYER</text>
+
+                <line class="vlink" x1="150" y1="120" x2="150" y2="310"/>
+                <line class="vlink" x1="275" y1="150" x2="275" y2="340"/>
+                <line class="vlink" x1="590" y1="92" x2="590" y2="282"/>
+                <line class="vlink" x1="240" y1="78" x2="240" y2="268"/>
+                <line class="vlink hot static-hot" style="--d:2.2s" x1="370" y1="82" x2="370" y2="272"/>
+                <line class="vlink hot" style="--d:2.4s" x1="470" y1="142" x2="470" y2="332"/>
+
+                <line class="edge" style="--d:.3s" x1="370" y1="82" x2="240" y2="78"/>
+                <line class="edge" style="--d:.3s" x1="370" y1="82" x2="275" y2="150"/>
+                <line class="edge" style="--d:.3s" x1="370" y1="82" x2="470" y2="142"/>
+                <line class="edge" style="--d:.3s" x1="370" y1="82" x2="590" y2="92"/>
+                <line class="edge" style="--d:1.4s" x1="240" y1="78" x2="150" y2="120"/>
+                <line class="edge" style="--d:1.4s" x1="275" y1="150" x2="150" y2="120"/>
+                <line class="edge" style="--d:1.4s" x1="275" y1="150" x2="470" y2="142"/>
+                <line class="edge" style="--d:1.4s" x1="470" y1="142" x2="590" y2="92"/>
+
+                <line class="edge" style="--d:3.3s" x1="370" y1="272" x2="240" y2="268"/>
+                <line class="edge" style="--d:3.3s" x1="370" y1="272" x2="590" y2="282"/>
+                <line class="edge" style="--d:3.3s" x1="370" y1="272" x2="470" y2="332"/>
+                <line class="edge" style="--d:3.3s" x1="470" y1="332" x2="275" y2="340"/>
+                <line class="edge" style="--d:3.3s" x1="470" y1="332" x2="590" y2="282"/>
+                <line class="edge" style="--d:4.2s" x1="240" y1="268" x2="150" y2="310"/>
+                <line class="edge" style="--d:4.2s" x1="275" y1="340" x2="150" y2="310"/>
+
+                <circle class="ripple" cx="370" cy="82" r="10"/>
+                <circle class="ripple r2" cx="370" cy="82" r="10"/>
+
+                <circle class="node" style="--d:1.8s" cx="150" cy="120" r="8"/>
+                <circle class="node" style="--d:.8s" cx="275" cy="150" r="8"/>
+                <circle class="node origin" cx="370" cy="82" r="9"/>
+                <circle class="node" style="--d:.8s" cx="470" cy="142" r="8"/>
+                <circle class="node" style="--d:.8s" cx="590" cy="92" r="8"/>
+                <circle class="node" style="--d:.8s" cx="240" cy="78" r="8"/>
+
+                <circle class="node" style="--d:4.6s" cx="150" cy="310" r="8"/>
+                <circle class="node" style="--d:3.8s" cx="275" cy="340" r="8"/>
+                <circle class="node static-node" style="--d:2.8s" cx="370" cy="272" r="8"/>
+                <circle class="node" style="--d:3s" cx="470" cy="332" r="8"/>
+                <circle class="node" style="--d:3.8s" cx="590" cy="282" r="8"/>
+                <circle class="node" style="--d:3.8s" cx="240" cy="268" r="8"/>
+              </svg>
+              <div class="legend">
+                <span><i class="dot"></i>Shock origin</span>
+                <span><i class="solid"></i>Spread within a layer (DebtRank)</span>
+                <span><i class="dash"></i>Crossing between layers (threshold)</span>
+              </div>
+            </div>
+            <div>
+              <p class="label">How the model works</p>
+              <ol class="steps">
+                <li>Two layers for 20 economies: bank lending (BIS) and trade (UN Comtrade).</li>
+                <li>A shock spreads within a layer by DebtRank.</li>
+                <li>Once distress passes a threshold, it jumps to the other layer.</li>
+                <li>Counting both layers reshuffles which countries look risky.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tile span-8">
+            <p class="label">Talks</p>
+            <ul class="talks">
+              <li><span class="date">Jan 21, 2026</span><span class="title"><a href="https://isarob.org/symposium/programs/arob31/Abstracts.pdf">Multilayer Propagation of Cross-Country Systemic Risk: A Hybrid Model with Horizontal DebtRank and Vertical Thresholds</a><span class="venue">AROB-ISBC 2026, Beppu · Oral, English</span></span></li>
+              <li><span class="date">Oct 18, 2025</span><span class="title"><a href="https://hokkaido.ipsj.or.jp/info2025/info2025program.pdf" lang="ja">国際的システミックリスクのマルチレイヤー波及</a><span class="venue">IPSJ Hokkaido Symposium 2025, Muroran · Poster, Japanese</span></span></li>
+              <li><span class="date">Sep 10, 2025</span><span class="title"><a href="https://pub.confit.atlas.jp/ja/event/society2025/presentation/N-1-14">Cross-border Financial Distress via Multi-layer DebtRank</a><span class="venue">IEICE Society Conference 2025, Okayama · Oral, English</span></span></li>
+              <li><span class="date">Jan 22, 2025</span><span class="title"><a href="https://isarob.org/symposium/programs/arob30/Abstracts.pdf">A Quantitative Analysis of Financial Distress Propagation in International Networks Utilizing DebtRank and a Multi-layer Approach</a><span class="venue">AROB-ISBC 2025, Beppu · Oral, English · Young Author Award</span></span></li>
+            </ul>
+            <p class="muted" style="margin-top:16px">Master's thesis (2026): Quantitative Analysis of Financial Risk Propagation in International Networks Using Multilayer DebtRank.</p>
+          </div>
+          <div class="tile award span-4">
+            <div>
+              <p class="label">Award</p>
+              <span class="big">6 / 443</span>
+              <h3>Young Author Award</h3>
+              <p>AROB-ISBC 2025, Beppu. One of six recipients among 443 participants, and the first University of Hyogo graduate student to receive it.</p>
+            </div>
+            <p style="margin-top:20px"><a href="https://u-hyogo-gsis.org/topics/%E5%8D%9A%E5%A3%AB%E5%89%8D%E6%9C%9F%E8%AA%B2%E7%A8%8B1%E5%B9%B4-%E3%83%81%E3%82%A7%E3%82%B8%E3%83%A5%E3%83%B3%E3%83%92%E3%83%A7%E3%83%B3%E3%81%95%E3%82%93%E3%81%AE%E5%8F%97%E8%B3%9E/">University news →</a></p>
           </div>
         </div>
-
-        <ul class="talks" aria-label="Presentations">
-          <li><span class="date">Jan 21, 2026</span><span class="title"><a href="https://isarob.org/symposium/programs/arob31/Abstracts.pdf">Multilayer Propagation of Cross-Country Systemic Risk: A Hybrid Model with Horizontal DebtRank and Vertical Thresholds</a><span class="venue">AROB-ISBC 2026, Beppu · Oral, English</span></span></li>
-          <li><span class="date">Oct 18, 2025</span><span class="title"><a href="https://hokkaido.ipsj.or.jp/info2025/info2025program.pdf" lang="ja">国際的システミックリスクのマルチレイヤー波及</a><span class="venue">IPSJ Hokkaido Symposium 2025, Muroran · Poster, Japanese</span></span></li>
-          <li><span class="date">Sep 10, 2025</span><span class="title"><a href="https://pub.confit.atlas.jp/ja/event/society2025/presentation/N-1-14">Cross-border Financial Distress via Multi-layer DebtRank</a><span class="venue">IEICE Society Conference 2025, Okayama · Oral, English</span></span></li>
-          <li><span class="date">Jan 22, 2025</span><span class="title"><a href="https://isarob.org/symposium/programs/arob30/Abstracts.pdf">A Quantitative Analysis of Financial Distress Propagation in International Networks Utilizing DebtRank and a Multi-layer Approach</a> <span class="badge warm">Young Author Award</span><span class="venue">AROB-ISBC 2025, Beppu · Oral, English</span></span></li>
-        </ul>
-        <p class="muted">Master's thesis (2026): Quantitative Analysis of Financial Risk Propagation in International Networks Using Multilayer DebtRank.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split">
-        <article class="card">
-          <h4>AWARDS</h4>
-          <ul class="list" style="margin-top:12px">
-            <li><span class="what">Young Author Award · AROB-ISBC 2025</span><span class="detail">One of six recipients among 443 participants, and the first University of Hyogo graduate student to receive it. <a href="https://u-hyogo-gsis.org/topics/%E5%8D%9A%E5%A3%AB%E5%89%8D%E6%9C%9F%E8%AA%B2%E7%A8%8B1%E5%B9%B4-%E3%83%81%E3%82%A7%E3%82%B8%E3%83%A5%E3%83%B3%E3%83%92%E3%83%A7%E3%83%B3%E3%81%95%E3%82%93%E3%81%AE%E5%8F%97%E8%B3%9E/">University news</a></span></li>
-            <li><span class="what">4th place · Goldman Sachs Japan Engineering Workshop</span><span class="detail">Individual P&amp;L ranking in an FX trading simulation, Sep 2024 (top-6 prize).</span></li>
-            <li><span class="what">Academic Excellence Scholarship · The University of Suwon</span><span class="detail">Three semesters, 2022–2023.</span></li>
-          </ul>
-        </article>
-        <article class="card">
-          <h4>EDUCATION &amp; CERTIFICATIONS</h4>
-          <ul class="list" style="margin-top:12px">
-            <li><span class="what">University of Hyogo · 2024–2026</span><span class="detail">Master's, Data and Computational Science</span></li>
-            <li><span class="what">The University of Suwon · 2022–2024</span><span class="detail">Bachelor of Engineering, Computer Software · GPA 4.11/4.5</span></li>
-            <li><span class="what">Fireblocks Academy · 2026</span><span class="detail">Four certification courses</span></li>
-            <li><span class="what">JLPT N1 · 2021</span><span class="detail">Industrial Engineer Information Processing (HRD Korea) · 2019</span></li>
-          </ul>
-        </article>
-      </div>
-      <div class="container" style="margin-top:16px">
-        <article class="card">
-          <h4>SKILLS</h4>
-          <ul class="chips"><li>Custody</li><li>HSM / PKCS#11</li><li>MPC</li><li>Tokenization</li><li>Solana</li><li>Python</li><li>TypeScript</li><li>Java</li><li>SQL</li><li>AWS</li><li>REST APIs</li><li>Network analysis</li><li>DebtRank</li><li>Systemic risk</li><li>pandas</li><li>PyTorch</li></ul>
-          <h4>PROJECTS</h4>
-          <ul class="list" style="margin-top:12px">
-            <li><a class="what" href="https://github.com/Junhyun-Chae/multilayer-debtrank-financial-contagion">multilayer-debtrank-financial-contagion</a><span class="detail">Python code for the model behind the JRFM paper.</span></li>
-            <li><a class="what" href="https://github.com/Junhyun-Chae/Stock_price_prediction_LSTM">Stock price prediction with LSTM</a><span class="detail">Undergraduate project (team of 2): 60-day forecasts for NASDAQ and KOSPI stocks.</span></li>
-          </ul>
-        </article>
+      <div class="container">
+        <div class="section-title"><h2>Background</h2><span class="rule"></span></div>
+        <div class="bento">
+          <article class="tile span-4">
+            <p class="label">Education</p>
+            <ul class="list">
+              <li><span class="what">University of Hyogo</span><span class="detail">Master's, Data and Computational Science · 2024–2026</span></li>
+              <li><span class="what">The University of Suwon</span><span class="detail">B.Eng., Computer Software · 2022–2024 · GPA 4.11/4.5</span></li>
+            </ul>
+          </article>
+          <article class="tile span-4">
+            <p class="label">Recognition</p>
+            <ul class="list">
+              <li><span class="what">Goldman Sachs Japan Engineering Workshop</span><span class="detail">4th place, individual P&amp;L in an FX trading simulation · 2024</span></li>
+              <li><span class="what">Academic Excellence Scholarship</span><span class="detail">The University of Suwon · three semesters, 2022–2023</span></li>
+            </ul>
+          </article>
+          <article class="tile span-4">
+            <p class="label">Certifications</p>
+            <ul class="list">
+              <li><span class="what">Fireblocks Academy</span><span class="detail">Four certification courses · 2026</span></li>
+              <li><span class="what">JLPT N1</span><span class="detail">Japanese-Language Proficiency Test · 2021</span></li>
+              <li><span class="what">Industrial Engineer Information Processing</span><span class="detail">HRD Korea · 2019</span></li>
+            </ul>
+          </article>
+          <article class="tile span-7">
+            <p class="label">Skills</p>
+            <ul class="chips"><li>Custody</li><li>HSM / PKCS#11</li><li>MPC</li><li>Tokenization</li><li>Solana</li><li>Python</li><li>TypeScript</li><li>Java</li><li>SQL</li><li>AWS</li><li>REST APIs</li><li>Network analysis</li><li>DebtRank</li><li>Systemic risk</li><li>pandas</li><li>PyTorch</li></ul>
+          </article>
+          <article class="tile span-5">
+            <p class="label">Projects</p>
+            <ul class="list">
+              <li><a class="what" href="https://github.com/Junhyun-Chae/multilayer-debtrank-financial-contagion">multilayer-debtrank-financial-contagion</a><span class="detail">Python code for the model behind the JRFM paper.</span></li>
+              <li><a class="what" href="https://github.com/Junhyun-Chae/Stock_price_prediction_LSTM">Stock price prediction with LSTM</a><span class="detail">Undergraduate project (team of 2): 60-day forecasts for NASDAQ and KOSPI stocks.</span></li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="container offclock">
-        <img src="assets/img/offclock.jpg" width="800" height="740" loading="lazy" alt="Junhyun Chae smiling outdoors">
-        <div>
-          <p class="kicker">OFF THE CLOCK</p>
-          <h2>Seoul, then Kobe, now Tokyo</h2>
-          <p>I grew up in Seoul, did my master's in Kobe, and now live in Tokyo. Korean is my first language, Japanese is my working language, and English is how I work with overseas vendors.</p>
+      <div class="container bento">
+        <figure class="tile photo span-5">
+          <img src="assets/img/offclock.jpg" width="1012" height="1124" loading="lazy" alt="Junhyun Chae smiling outdoors with peace signs">
+        </figure>
+        <div class="tile journey span-7 accent">
+          <p class="label">Off the clock</p>
+          <h2>Seoul → Kobe → Tokyo</h2>
+          <p>Korean is my first language, Japanese is my working language, and English is how I work with vendors overseas.</p>
+          <ol class="route">
+            <li><span class="city">Seoul</span><span class="what">Grew up and studied computer engineering in the Seoul area.</span></li>
+            <li><span class="city">Kobe</span><span class="what">Master's at the University of Hyogo; first paper and first award.</span></li>
+            <li><span class="city">Tokyo</span><span class="what">Building digital asset infrastructure at InterTrade.</span></li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <div class="container">
-      <section class="contact" id="contact">
-        <h2>Let's talk</h2>
-        <p>Happy to talk about digital asset infrastructure, key management, or financial network research.</p>
-        <div class="cta">
-          <a class="btn" href="mailto:smiledanny@gmail.com">Email me</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/junhyun-chae-654414443/">LinkedIn</a>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="tile contact">
+          <p class="label" style="justify-content:center">Contact</p>
+          <h2>Let's <em>talk</em></h2>
+          <p>Happy to talk about digital asset infrastructure, key management, or financial network research.</p>
+          <div class="cta">
+            <a class="btn gold" href="mailto:smiledanny@gmail.com">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/junhyun-chae-654414443/">LinkedIn</a>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer>© 2026 Junhyun Chae · Tokyo</footer>
-
 </body>
 </html>
