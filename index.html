@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junhyun Chae | Digital Asset Infrastructure Engineer</title>
+  <meta name="description" content="Junhyun Chae is a software engineer in Tokyo working on institutional digital asset infrastructure (custody, HSM-based key management, token operations), with a research background in cross-country systemic risk.">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="ja" href="./ja/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Junhyun Chae",
+    "alternateName": ["チェ・ジュンヒョン", "채준현"],
+    "jobTitle": "Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "InterTrade Co., Ltd." },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Hyogo" },
+      { "@type": "CollegeOrUniversity", "name": "The University of Suwon" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Tokyo", "addressCountry": "JP" },
+    "knowsLanguage": ["ko", "ja", "en"],
+    "sameAs": [
+      "https://www.linkedin.com/in/junhyun-chae-654414443/",
+      "https://github.com/Junhyun-Chae",
+      "https://orcid.org/0009-0007-5531-7071"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Language">
+      <div class="lang">
+        <a href="./" aria-current="true" lang="en">English</a>
+        <a href="./ja/" lang="ja">日本語</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Junhyun Chae</h1>
+      <p class="alt-names"><span lang="ja">チェ・ジュンヒョン</span> · <span lang="ko">채준현</span></p>
+      <p class="tagline">Software engineer working on institutional digital asset infrastructure: custody, HSM-based key management and token operations. Research background in systemic risk in financial networks.</p>
+      <p class="location">Tokyo, Japan</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/junhyun-chae-654414443/" rel="me">LinkedIn</a></li>
+        <li><a href="https://github.com/Junhyun-Chae" rel="me">GitHub</a></li>
+        <li><a href="https://orcid.org/0009-0007-5531-7071" rel="me">ORCID</a></li>
+        <li><a href="mailto:smiledanny@gmail.com">Email</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section id="about" aria-labelledby="about-h">
+        <h2 id="about-h">About</h2>
+        <p>I work on the digital asset team at InterTrade (TSE: 3747) in Tokyo. I designed and built, from scratch, a PKCS#11 signing adapter that connects an institutional MPC custody platform to hardware security modules, and I automate token issuance and redemption on a public blockchain using AWS. I am also the technical point of contact for overseas custody vendors.</p>
+        <p>Before joining, I studied how financial shocks travel between countries. At the University of Hyogo I built a multilayer DebtRank model that couples cross-border bank lending with international trade. The work became a first-author paper in the <i>Journal of Risk and Financial Management</i> (2026), and an earlier version received a Young Author Award at AROB 2025.</p>
+        <p>I am interested in where the two meet: understanding risk in financial networks, and building digital asset systems that stay secure when things go wrong.</p>
+      </section>
+
+      <section id="experience" aria-labelledby="exp-h">
+        <h2 id="exp-h">Experience</h2>
+        <div class="org">
+          <h3>InterTrade Co., Ltd.</h3>
+          <span class="meta">Tokyo · Apr 2026 – present</span>
+        </div>
+        <div class="role current">
+          <h4>Software Engineer, Digital Asset Custody &amp; HSM Integration</h4>
+          <p class="meta">Current · recruited internally to the digital asset team</p>
+          <ul class="points">
+            <li>Designed and built, from scratch, a PKCS#11 signing adapter connecting an institutional MPC custody platform to hardware security modules (HSMs); now in use.</li>
+            <li>Automated token issuance and redemption workflows on a public blockchain using AWS.</li>
+            <li>Technical point of contact for an institutional custody platform vendor, resolving integration issues directly in English.</li>
+            <li>Evaluated institutional custody providers, supported NDA and contract reviews, and connected custody providers with financial institutions.</li>
+            <li>Built internal automation tools in Python and Excel, including a cost reconciliation tool adopted by non-engineering colleagues.</li>
+          </ul>
+        </div>
+        <div class="role">
+          <h4>Software Engineer, FX Trading Systems</h4>
+          <p class="meta">First assignment after joining</p>
+          <ul class="points">
+            <li>Developed and maintained programs for an FX trading system, including resilience tests that keep customer trading running during database outages.</li>
+            <li>Refactored a market-rate retrieval tool in Python and built a packaged rate-retrieval application for a client.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="research" aria-labelledby="res-h">
+        <h2 id="res-h">Research</h2>
+        <article class="card">
+          <p class="kicker">Journal article · first author</p>
+          <h3>Multilayer Propagation of Cross-Country Systemic Risk</h3>
+          <p class="meta">Junhyun Chae, Hiroyasu Inoue · <i>Journal of Risk and Financial Management</i> 19(3), 197 · March 2026</p>
+          <p>We model cross-border contagion on two coupled layers, international bank lending (BIS Locational Banking Statistics) and bilateral trade (UN Comtrade), for 20 economies from 2000 to 2023. Shocks spread within each layer by DebtRank and cross to the other layer when distress passes a threshold. Accounting for both layers changes which countries look systemically important, and the rankings hold across a wide range of thresholds.</p>
+          <p class="actions">
+            <a href="https://doi.org/10.3390/jrfm19030197">Read the paper (open access)</a>
+            <a href="https://github.com/Junhyun-Chae/multilayer-debtrank-financial-contagion">Code</a>
+          </p>
+          <figure>
+            <svg viewBox="0 0 640 330" role="img" aria-label="Two coupled network layers. A shock spreads within each layer and crosses between layers.">
+              <polygon class="fig-plane" points="110,34 620,34 530,134 20,134"/>
+              <polygon class="fig-plane" points="110,194 620,194 530,294 20,294"/>
+              <text class="fig-label" x="24" y="22">Financial layer</text>
+              <text class="fig-label" x="24" y="322">Trade layer</text>
+              <line class="fig-link" x1="150" y1="74" x2="150" y2="234"/>
+              <line class="fig-link" x1="270" y1="104" x2="270" y2="264"/>
+              <line class="fig-link" x1="360" y1="60" x2="360" y2="220"/>
+              <line class="fig-link" x1="460" y1="100" x2="460" y2="260"/>
+              <line class="fig-link" x1="540" y1="64" x2="540" y2="224"/>
+              <line class="fig-edge" x1="150" y1="74" x2="270" y2="104"/>
+              <line class="fig-edge" x1="270" y1="104" x2="360" y2="60"/>
+              <line class="fig-edge" x1="360" y1="60" x2="460" y2="100"/>
+              <line class="fig-edge" x1="460" y1="100" x2="540" y2="64"/>
+              <line class="fig-edge" x1="150" y1="74" x2="360" y2="60"/>
+              <line class="fig-edge" x1="270" y1="104" x2="460" y2="100"/>
+              <line class="fig-edge" x1="150" y1="234" x2="270" y2="264"/>
+              <line class="fig-edge" x1="270" y1="264" x2="460" y2="260"/>
+              <line class="fig-edge" x1="360" y1="220" x2="540" y2="224"/>
+              <line class="fig-edge" x1="150" y1="234" x2="360" y2="220"/>
+              <line class="fig-edge" x1="460" y1="260" x2="540" y2="224"/>
+              <circle class="fig-ring" cx="360" cy="60" r="26"/>
+              <circle class="fig-ring" cx="360" cy="60" r="17"/>
+              <circle class="fig-node" cx="150" cy="74" r="9"/>
+              <circle class="fig-node" cx="270" cy="104" r="9"/>
+              <circle class="fig-node fig-shock" cx="360" cy="60" r="9"/>
+              <circle class="fig-node" cx="460" cy="100" r="9"/>
+              <circle class="fig-node" cx="540" cy="64" r="9"/>
+              <circle class="fig-node" cx="150" cy="234" r="9"/>
+              <circle class="fig-node" cx="270" cy="264" r="9"/>
+              <circle class="fig-node" cx="360" cy="220" r="9"/>
+              <circle class="fig-node" cx="460" cy="260" r="9"/>
+              <circle class="fig-node" cx="540" cy="224" r="9"/>
+            </svg>
+            <figcaption>Each node is an economy. A shock (filled node) spreads within a layer by DebtRank; the dashed links carry it to the other layer once distress passes a threshold. Illustration only.</figcaption>
+          </figure>
+        </article>
+
+        <p style="margin-top:20px"><strong>Master's thesis</strong> (University of Hyogo, 2026): Quantitative Analysis of Financial Risk Propagation in International Networks Using Multilayer DebtRank. Advisor: Prof. Hiroyasu Inoue.</p>
+
+        <h3 style="margin:28px 0 12px">Presentations</h3>
+        <ul class="plain">
+          <li class="row">
+            <span class="when">Jan 21, 2026</span>
+            <span><a href="https://isarob.org/symposium/programs/arob31/Abstracts.pdf">Multilayer Propagation of Cross-Country Systemic Risk: A Hybrid Model with Horizontal DebtRank and Vertical Thresholds</a><br><span class="meta">AROB-ISBC 2026 (31st AROB), Beppu · Oral, English</span></span>
+          </li>
+          <li class="row">
+            <span class="when">Oct 18, 2025</span>
+            <span><a href="https://hokkaido.ipsj.or.jp/info2025/info2025program.pdf" lang="ja">国際的システミックリスクのマルチレイヤー波及</a><br><span class="meta">IPSJ Hokkaido Symposium 2025, Muroran · Poster, Japanese</span></span>
+          </li>
+          <li class="row">
+            <span class="when">Sep 10, 2025</span>
+            <span><a href="https://pub.confit.atlas.jp/ja/event/society2025/presentation/N-1-14">Cross-border Financial Distress via Multi-layer DebtRank</a><br><span class="meta">IEICE Society Conference 2025, Okayama · Oral, English</span></span>
+          </li>
+          <li class="row">
+            <span class="when">Jan 22, 2025</span>
+            <span><a href="https://isarob.org/symposium/programs/arob30/Abstracts.pdf">A Quantitative Analysis of Financial Distress Propagation in International Networks Utilizing DebtRank and a Multi-layer Approach</a><span class="badge">Young Author Award</span><br><span class="meta">AROB-ISBC 2025 (30th AROB), Beppu · Oral, English</span></span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="awards" aria-labelledby="awards-h">
+        <h2 id="awards-h">Awards</h2>
+        <ul class="plain">
+          <li class="row">
+            <span class="when">Jan 2025</span>
+            <span><strong>Young Author Award</strong>, AROB-ISBC 2025<br><span class="meta">One of six recipients among 443 participants; the first University of Hyogo graduate student to receive it. <a href="https://u-hyogo-gsis.org/topics/%E5%8D%9A%E5%A3%AB%E5%89%8D%E6%9C%9F%E8%AA%B2%E7%A8%8B1%E5%B9%B4-%E3%83%81%E3%82%A7%E3%82%B8%E3%83%A5%E3%83%B3%E3%83%92%E3%83%A7%E3%83%B3%E3%81%95%E3%82%93%E3%81%AE%E5%8F%97%E8%B3%9E/">University news</a></span></span>
+          </li>
+          <li class="row">
+            <span class="when">Sep 2024</span>
+            <span><strong>4th place</strong>, Goldman Sachs Japan Engineering Workshop<br><span class="meta">Individual P&amp;L ranking in an FX trading simulation (top-6 prize).</span></span>
+          </li>
+          <li class="row">
+            <span class="when">2022 – 2023</span>
+            <span><strong>Academic Excellence Scholarship</strong>, The University of Suwon<br><span class="meta">Three semesters.</span></span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="proj-h">
+        <h2 id="proj-h">Projects</h2>
+        <ul class="plain">
+          <li>
+            <h3><a href="https://github.com/Junhyun-Chae/multilayer-debtrank-financial-contagion">multilayer-debtrank-financial-contagion</a></h3>
+            <p class="meta" style="margin:4px 0 0">Python code for the multilayer DebtRank model behind the JRFM paper.</p>
+          </li>
+          <li>
+            <h3><a href="https://github.com/Junhyun-Chae/Stock_price_prediction_LSTM">Stock price prediction with LSTM</a></h3>
+            <p class="meta" style="margin:4px 0 0">Undergraduate graduation project (team of 2): 60-day forecasts for NASDAQ and KOSPI stocks with a bidirectional LSTM.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-h">
+        <h2 id="skills-h">Skills</h2>
+        <div class="skills">
+          <div>
+            <h3>Digital assets</h3>
+            <ul class="chips"><li>Custody</li><li>HSM / PKCS#11</li><li>MPC</li><li>Tokenization</li><li>Solana</li></ul>
+          </div>
+          <div>
+            <h3>Engineering</h3>
+            <ul class="chips"><li>Python</li><li>TypeScript</li><li>Java</li><li>SQL</li><li>AWS</li><li>REST APIs</li></ul>
+          </div>
+          <div>
+            <h3>Research &amp; data</h3>
+            <ul class="chips"><li>Network analysis</li><li>DebtRank</li><li>Systemic risk</li><li>pandas</li><li>scikit-learn</li><li>PyTorch</li><li>TensorFlow</li></ul>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="chips"><li>Korean (native)</li><li>Japanese (business, JLPT N1)</li><li>English (professional)</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" aria-labelledby="edu-h">
+        <h2 id="edu-h">Education &amp; certifications</h2>
+        <ul class="plain">
+          <li class="row">
+            <span class="when">2024 – 2026</span>
+            <span><strong>University of Hyogo</strong><br><span class="meta">Master's, Data and Computational Science, Graduate School of Information Science</span></span>
+          </li>
+          <li class="row">
+            <span class="when">2022 – 2024</span>
+            <span><strong>The University of Suwon</strong><br><span class="meta">Bachelor of Engineering, Computer Software · GPA 4.11/4.5</span></span>
+          </li>
+          <li class="row">
+            <span class="when">2026</span>
+            <span><strong>Fireblocks Academy</strong><br><span class="meta">Four certification courses</span></span>
+          </li>
+          <li class="row">
+            <span class="when">2021</span>
+            <span><strong>Japanese-Language Proficiency Test N1</strong></span>
+          </li>
+          <li class="row">
+            <span class="when">2019</span>
+            <span><strong>Industrial Engineer Information Processing</strong><br><span class="meta">HRD Korea</span></span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-h">
+        <h2 id="contact-h">Contact</h2>
+        <p>The best way to reach me is by <a href="mailto:smiledanny@gmail.com">email</a> or a message on <a href="https://www.linkedin.com/in/junhyun-chae-654414443/">LinkedIn</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Junhyun Chae · Last updated October 2026
+    </footer>
+  </div>
+</body>
+</html>

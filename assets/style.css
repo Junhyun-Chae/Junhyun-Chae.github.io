@@ -1,0 +1,412 @@
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --text: #1c2024;
+  --muted: #5d656d;
+  --line: #e2dfd7;
+  --accent: #0e5a6b;
+  --accent-soft: #e2eff1;
+  --award: #8a5b00;
+  --award-soft: #f6ecd8;
+  --radius: 10px;
+  --font: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", "Yu Gothic", Meiryo, "Apple SD Gothic Neo", sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101315;
+    --surface: #171b1e;
+    --text: #e7eaec;
+    --muted: #9ba4ac;
+    --line: #2a3136;
+    --accent: #6fc4d6;
+    --accent-soft: #143840;
+    --award: #e2b45a;
+    --award-soft: #3a2e14;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.lang a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.lang a[aria-current="true"] {
+  color: var(--text);
+  font-weight: 600;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+/* Hero */
+.hero {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 6vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero .alt-names {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.hero .tagline {
+  margin: 20px 0 0;
+  font-size: 18px;
+  max-width: 640px;
+}
+
+.hero .location {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Sections */
+section {
+  padding: 36px 0 8px;
+}
+
+section > h2 {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+section p {
+  margin: 0 0 14px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Experience */
+.org {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  align-items: baseline;
+}
+
+.role {
+  margin: 18px 0 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+.role.current {
+  border-left-color: var(--accent);
+}
+
+.role h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+ul.points {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+ul.points li {
+  margin: 4px 0;
+}
+
+/* Paper card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.card .kicker {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.card .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+figure {
+  margin: 18px 0 0;
+}
+
+figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.fig-plane {
+  fill: var(--accent-soft);
+  stroke: var(--line);
+}
+
+.fig-edge {
+  stroke: var(--muted);
+  stroke-width: 1.4;
+  opacity: 0.55;
+}
+
+.fig-link {
+  stroke: var(--accent);
+  stroke-width: 1.4;
+  stroke-dasharray: 4 4;
+  opacity: 0.8;
+}
+
+.fig-node {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 1.6;
+}
+
+.fig-shock {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.fig-ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.4;
+  opacity: 0.45;
+}
+
+.fig-label {
+  fill: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Lists */
+ul.plain {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.plain > li {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+ul.plain > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 4px 16px;
+}
+
+.row .when {
+  color: var(--muted);
+  font-size: 14px;
+  padding-top: 1px;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--award-soft);
+  color: var(--award);
+  font-size: 12px;
+  font-weight: 700;
+  vertical-align: 2px;
+}
+
+/* Skills */
+.skills {
+  display: grid;
+  gap: 14px;
+}
+
+.skills h3 {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 13.5px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 24px 0 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 24px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .fig-label {
+    font-size: 24px;
+  }
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+  }
+
+  .topbar,
+  .links,
+  figure {
+    display: none;
+  }
+
+  section {
+    padding-top: 18px;
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
