@@ -1,7 +1,5 @@
 # junhyun-chae.github.io
 
-Personal website of Junhyun Chae. Plain HTML and CSS, no build step.
+My personal site: https://junhyun-chae.github.io
 
-- `index.html`: English
-- `ja/index.html`: Japanese
-- `assets/`: stylesheet and icon
+Plain HTML/CSS. English at `/`, Japanese at `/ja/`.
